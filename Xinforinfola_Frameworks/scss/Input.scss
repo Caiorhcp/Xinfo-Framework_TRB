@@ -1,0 +1,306 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color-body;
+}
+
+.xinfo-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $secondary-color-body;
+
+    .section-menu1 {
+        display: flex;
+        flex-direction: column;
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+            }
+
+            span {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+
+        .menus1 {
+            display: flex;
+            gap: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+
+            .dropdown-button {
+                padding: 0.3rem 0.6rem; 
+                background-color: rgba(128, 128, 128, 0.5); 
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 0.25rem;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    
+
+                .arrow {
+                    margin-left: 0.5rem;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: white;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                border-radius: 0.25rem;
+                overflow: hidden;
+                z-index: 1;
+
+                a {
+                    display: block;
+                    padding: 0.5rem 1rem;
+                    color: #333;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+
+            &:hover .dropdown-content {
+                display: block;
+            }
+        }
+    }
+
+    .right-section {
+        display: flex;
+        gap: 1rem;
+
+        .dropdown {
+            position: relative;
+
+            .dropdown-button {
+                padding: 0.3rem 0.6rem; 
+                background-color: rgba(128, 128, 128, 0.5); 
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 0.25rem;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+
+                .arrow {
+                    margin-left: 0.5rem;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover .arrow {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: white;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                border-radius: 0.25rem;
+                overflow: hidden;
+                z-index: 1;
+
+                a {
+                    display: block;
+                    padding: 0.5rem 1rem;
+                    color: #333;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+
+            &:hover .dropdown-content {
+                display: block;
+            }
+        }
+    }
+}
+
+
+//container1
+.xinfo-container1 {
+   max-width: 100%;
+   max-height: 100%;
+   display: flex;
+   padding: 0px 20px;
+   justify-content: center;
+   align-items: center;
+   background-color: $secondary-color-body;
+   border-radius: 20%;
+}
+
+//card estilo 1
+.xinfo-card1 {
+    background-color: $primary-color-body;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 460px;
+    margin: 20px;
+    border: $border-card1;
+    border-radius: $border-radius-card1;
+    border-color: $border-color-card1;
+    
+    
+     //imagem
+    .image{
+        border-radius: $border-radius-image1;
+        width: 100%;
+        height: 100%;
+    }
+
+    //conteudo card1
+    .xinfo-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        h2 {
+            letter-spacing: 2px;
+            font-family:Helvetica;
+            font-style: italic;
+            margin:10px 0px 20px 0px ;
+        }
+        p {
+            font-size: 12px;
+            margin: 0px 0px 50px 0px ;
+        }
+    }
+
+
+    //Botão estilo1 
+    .xinfo-button1 {
+        position: relative;
+        bottom: 20px;
+        left: 20px;
+        max-width: 86px;
+        background: $background-color-button1;
+        color: $text-color-button1;
+        font-size: $font-size-base;
+        padding: $spacing-unit;
+        border: $border-button1;
+        border-color: $border-color-button1;
+        border-radius: $border-radius-button1;
+        font-family: Helvetica;
+        font-size: 14px;
+        padding: 5px 10px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    
+        &:hover {
+            background-color: $backgroundHover-color-button1 ;
+            color: $textHover-color-button1 !important;
+            cursor: pointer;
+        }
+    }
+}
+
+
+//card estilo2
+.xinfo-card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 460px;
+    margin: 20px;
+    
+     //imagem
+    .image{
+        border-radius: $border-radius-image2;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    //conteudo card1
+    .xinfo-content2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        h2 {
+            letter-spacing: 2px;
+            font-family:Helvetica;
+            font-style: italic;
+            margin:10px 0px 20px 0px ;
+        }
+        p {
+            font-size: 12px;
+            margin: 0px 0px 20px 0px ;
+        }
+    }
+
+
+    //Botão estilo2
+.xinfo-button2 {
+    position: relative;
+    max-width: 300px;
+    background: $background-color-button2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1;
+    border-radius: $border-radius-button2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out 0.1s, color 0.1s ease-in-out 0.1s;
+
+    &:hover {
+        color: $textHover-color-button2 !important;
+        border-color: $border-color-button2;
+        cursor: pointer;
+    }
+
+}
+}
+
+
+

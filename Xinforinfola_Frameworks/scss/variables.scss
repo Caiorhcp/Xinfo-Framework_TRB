@@ -1,0 +1,55 @@
+// _variables.scss
+
+// Cores principais
+$primary-color-body: #ffffff; 
+$secondary-color-body: #2e2e2e; 
+$alternative-color-body: #000000; 
+
+
+//card1_styled
+$border-card1: 1px solid;
+$border-color-card1: #4b4b4b73;
+$border-radius-card1: 30px;
+$border-radius-image1: 30px 30px 0px 0px;
+
+//card2_styled
+//$border-card2: 1px solid;
+$border-color-card2: #4b4b4b73; 
+//$border-radius-card2: 30px;
+$border-radius-image2: 50px;
+
+
+//Button1_Styled
+$background-color-button1: #4a08c4;
+$backgroundHover-color-button1: #ffffff;
+$text-color-button1: #ffffff; // Texto branco
+$textHover-color-button1: #4a08c4; // Texto branco
+$border-color-button1:#4a08c4; 
+$border-button1: 1px solid;
+$border-radius-button1: 50px; // Raio de borda padrão
+
+//Button2_Styled
+$background-color-button2: #ffffff;
+$text-color-button2: #4a08c4; // Texto branco
+$textHover-color-button2: #4a08c4; // Texto branco
+$border-color-button2:#4a08c4; 
+$border-button2: 1px solid;
+$border-radius-button2: 50px; // Raio de borda padrão
+
+// Cores de suporte
+$dark-gray: #333333;
+$light-gray: #f0f0f0;
+$gray-color: #444444;
+
+// Tipografia
+$font-family-base: 'Arial, sans-serif'; 
+$font-size-base: 16px; // Tamanho de fonte base
+$font-size-large: 24px; // Tamanho de fonte grande
+$font-size-small: 14px; // Tamanho de fonte pequena
+
+// Espaçamentos
+$spacing-unit: 16px; // Unidade de espaçamento base
+$header-height: 80px; // Altura do cabeçalho
+
+// Bordas e sombras
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra padrão
