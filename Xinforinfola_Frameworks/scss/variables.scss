@@ -3,21 +3,30 @@
 // Cores principais
 $primary-color-body: #ffffff; 
 $secondary-color-body: #2e2e2e; 
+$secondary-color-body-transparent: #2e2e2e33; 
 $alternative-color-body: #000000; 
+$alternative2-color: #4a08c4;
 
+
+
+
+//cards
 
 //card1_styled
 $border-card1: 1px solid;
 $border-color-card1: #4b4b4b73;
-$border-radius-card1: 30px;
+$border-radius-card1: 32px;
 $border-radius-image1: 30px 30px 0px 0px;
 
 //card2_styled
-//$border-card2: 1px solid;
+$border-card2: 1px solid;
 $border-color-card2: #4b4b4b73; 
-//$border-radius-card2: 30px;
+$border-radius-card2: 30px;
 $border-radius-image2: 50px;
 
+
+
+//Botões
 
 //Button1_Styled
 $background-color-button1: #4a08c4;
@@ -28,6 +37,45 @@ $border-color-button1:#4a08c4;
 $border-button1: 1px solid;
 $border-radius-button1: 50px; // Raio de borda padrão
 
+
+// Button1v2_Styled
+$background-color-button1v2: #ff6600; // Preto
+$backgroundHover-color-button1v2: #ffffff; // Laranja
+$text-color-button1v2: #ffffff; // Texto branco
+$textHover-color-button1v2: #ff6600; // Texto preto
+$border-color-button1v2: #ff6600; // Laranja
+$border-button1v2: 1px solid;
+$border-radius-button1v2: 50px; // Raio de borda padrão
+
+// Button1v3_Styled
+$background-color-button1v3: #20a100; // Branco
+$backgroundHover-color-button1v3: #ffffff9c; // Roxo
+$text-color-button1v3: #ffffff; // Texto roxo   
+$textHover-color-button1v3: #20a100; // Texto branco
+$border-color-button1v3: #20a100; // Roxo
+$border-button1v3: 1px solid;
+$border-radius-button1v3: 50px; // Raio de borda padrão
+
+// Button1v4_Styled
+$background-color-button1v4: #ffffff; // Branco
+$backgroundHover-color-button1v4: #000000; // Roxo
+$text-color-button1v4: #000000; // Texto roxo   
+$textHover-color-button1v4: #ffffff; // Texto branco
+$border-color-button1v4: #000000; // Roxo
+$border-button1v4: 1px solid;
+$border-radius-button1v4: 50px; // Raio de borda padrão
+// Button1v5_Styled
+$background-color-button1v5: #000000; // Branco
+$backgroundHover-color-button1v5: #ffffff; // Roxo
+$text-color-button1v5: #ffffff; // Texto roxo   
+$textHover-color-button1v5: #000000; // Texto branco
+$border-color-button1v5: #9b9b9b; // Roxo
+$border-button1v5: 1px solid;
+$border-radius-button1v5: 50px; // Raio de borda padrão
+
+
+
+
 //Button2_Styled
 $background-color-button2: #ffffff;
 $text-color-button2: #4a08c4; // Texto branco
@@ -35,6 +83,45 @@ $textHover-color-button2: #4a08c4; // Texto branco
 $border-color-button2:#4a08c4; 
 $border-button2: 1px solid;
 $border-radius-button2: 50px; // Raio de borda padrão
+
+// Button2v2_Styled
+$background-color-button2v2: #ffffff; // Laranja
+$backgroundHover-color-button2v2: #000000; // Branco
+$text-color-button2v2: #000000; // Texto branco
+$textHover-color-button2v2: #ff6600; // Texto laranja
+$border-color-button2v2: #ff6600; // Branco
+$border-button2v2: 1px solid;
+$border-radius-button2v2: 50px; // Raio de borda padrão
+
+// Button2v3_Styled
+$background-color-button2v3: #ffffff; // Cinza
+$backgroundHover-color-button2v3: #000000; // Preto
+$text-color-button2v3: #000000; // Texto branco
+$textHover-color-button2v3: #20a100; // Texto cinza
+$border-color-button2v3: #20a100; // Preto
+$border-button2v3: 1px solid;
+$border-radius-button2v3: 50px; // Raio de borda padrão
+
+// Button2v4_Styled
+$background-color-button2v4: #ffffff; // Cinza
+$backgroundHover-color-button2v4: #000000; // Preto
+$text-color-button2v4: #000000; // Texto branco
+$textHover-color-button2v4: rgb(255, 255, 255); // Texto cinza
+$border-color-button2v4: #000000; // Preto
+$border-button2v4: 1px solid;
+$border-radius-button2v4: 50px; // Raio de borda padrão
+
+// Button2v5_Styled
+$background-color-button2v5: #000000; // Cinza
+$backgroundHover-color-button2v5: #ffffff; // Preto
+$text-color-button2v5: #ffffff; // Texto branco
+$textHover-color-button2v5: #000000; // Texto cinza
+$border-color-button2v5: #ffffff; // Preto
+$border-button2v5: 1px solid;
+$border-radius-button2v5: 50px; // Raio de borda padrão
+
+
+
 
 // Cores de suporte
 $dark-gray: #333333;

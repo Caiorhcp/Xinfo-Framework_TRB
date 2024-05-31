@@ -12,166 +12,264 @@ html, body {
     background-color: $primary-color-body;
 }
 
+
 .xinfo-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; 
     padding: 1rem;
-    background-color: $secondary-color-body;
+    background-color: $secondary-color-body; 
+}
 
-    .section-menu1 {
-        display: flex;
-        flex-direction: column;
+.xinfo-section-menu1 {
+    display: flex;
+    flex-direction: column;
+}
 
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
+.xinfo-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: azure;
+}
 
-            img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                margin-right: 0.5rem;
-            }
+.xinfo-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
 
-            span {
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-        }
+.xinfo-profile span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
-        .menus1 {
-            display: flex;
-            gap: 5px;
-        }
+.xinfo-menus1 {
+    display: flex;
+    gap: 5px;
+}
 
-        .dropdown {
-            position: relative;
+.xinfo-dropdown {
+    position: relative;
+}
 
-            .dropdown-button {
-                padding: 0.3rem 0.6rem; 
-                background-color: rgba(128, 128, 128, 0.5); 
-                border: none;
-                color: white;
-                cursor: pointer;
-                border-radius: 0.25rem;
-                display: flex;
-                align-items: center;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    
+.xinfo-dropdown-button {
+    padding: 0.3rem 0.6rem; 
+    background-color: rgba(128, 128, 128, 0.5); 
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
 
-                .arrow {
-                    margin-left: 0.5rem;
-                    transition: transform 0.3s ease;
-                }
+.xinfo-arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
 
-                &:hover .arrow {
-                    transform: rotate(180deg);
-                }
-            }
+.xinfo-dropdown-button:hover .xinfo-arrow {
+    transform: rotate(180deg);
+}
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background-color: white;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                border-radius: 0.25rem;
-                overflow: hidden;
-                z-index: 1;
+.xinfo-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    z-index: 1;
+}
 
-                a {
-                    display: block;
-                    padding: 0.5rem 1rem;
-                    color: #333;
-                    text-decoration: none;
+.xinfo-dropdown-content a, .xinfo-dropdown-content p {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
 
-                    &:hover {
-                        background-color: #f1f1f1;
-                    }
-                }
-            }
+.xinfo-dropdown-content a:hover, .xinfo-dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
 
-            &:hover .dropdown-content {
-                display: block;
-            }
-        }
-    }
+.xinfo-dropdown:hover .xinfo-dropdown-content {
+    display: block;
+}
 
-    .right-section {
-        display: flex;
-        gap: 1rem;
+.xinfo-right-section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 8px; 
+}
 
-        .dropdown {
-            position: relative;
+.xinfo-right-section .xinfo-dropdown {
+    position: relative;
+}
 
-            .dropdown-button {
-                padding: 0.3rem 0.6rem; 
-                background-color: rgba(128, 128, 128, 0.5); 
-                border: none;
-                color: white;
-                cursor: pointer;
-                border-radius: 0.25rem;
-                display: flex;
-                align-items: center;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+.xinfo-right-section .xinfo-dropdown-button {
+    padding: 0.3rem 0.6rem; 
+    background-color: rgba(128, 128, 128, 0.5); 
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
 
-                .arrow {
-                    margin-left: 0.5rem;
-                    transition: transform 0.3s ease;
-                }
+.xinfo-right-section .xinfo-arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
 
-                &:hover .arrow {
-                    transform: rotate(180deg);
-                }
-            }
+.xinfo-right-section .xinfo-dropdown-button:hover .xinfo-arrow {
+    transform: rotate(180deg);
+}
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                background-color: white;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                border-radius: 0.25rem;
-                overflow: hidden;
-                z-index: 1;
+.xinfo-right-section .xinfo-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    z-index: 1;
+}
 
-                a {
-                    display: block;
-                    padding: 0.5rem 1rem;
-                    color: #333;
-                    text-decoration: none;
+.xinfo-right-section .xinfo-dropdown-content a, .xinfo-right-section .xinfo-dropdown-content p {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
 
-                    &:hover {
-                        background-color: #f1f1f1;
-                    }
-                }
-            }
+.xinfo-right-section .xinfo-dropdown-content a:hover, .xinfo-right-section .xinfo-dropdown-content p:hover {
+    background-color: #ffffff;
+}
 
-            &:hover .dropdown-content {
-                display: block;
-            }
-        }
-    }
+.xinfo-right-section .xinfo-dropdown:hover .xinfo-dropdown-content {
+    display: block;
+}
+
+
+.xinfo-login-content {
+    width: 320px;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+}
+
+.xinfo-login-content p {
+    margin: 0.5rem 0;
+    color: azure;
+}
+.xinfo-login-content :hover {
+    background-color: #7c7c7c77;
+}
+
+.xinfo-login-content button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #380079;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.xinfo-login-content button:hover {
+    background-color: #080038be;
+}
+
+//pai dos cards
+.xinfo-cardsAll {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 
 //container1
 .xinfo-container1 {
-   max-width: 100%;
-   max-height: 100%;
-   display: flex;
-   padding: 0px 20px;
-   justify-content: center;
-   align-items: center;
-   background-color: $secondary-color-body;
-   border-radius: 20%;
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color-body-transparent;
+    border-radius: 20%;
+    gap: 50px;
+    box-shadow: 0 4px 8px rgba(0.0, 0.0, 0.0, 20); 
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 40px;
+
+    h1 {
+       font-size: 90px;
+       text-shadow: 0 4px 8px rgba(0.0, 0.0, 0.0, 20);
+       color: $alternative2-color;
+       letter-spacing: 10px;
+    }
+ }
+
+.xinfo-text-container1{
+    max-width: 60%;
+    color: $gray-color;
+    font-size: 16px;
 }
 
+
+
+//container1
+.xinfo-container-image {
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color-body-transparent;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0.0, 0.0, 0.0, 20); 
+    margin: 20px 0px 20px 0px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 500px;
+    }
+
+    h1 {
+    font-size: 90px;
+    text-shadow: 0 4px 8px rgba(0.0, 0.0, 0.0, 20);
+    color: $alternative2-color;
+    letter-spacing: 10px;
+    }
+ }
+
+
+
+.text-container1{
+    max-width: 60%;
+    color: $gray-color;
+    font-size: 16px;
+}
 //card estilo 1
 .xinfo-card1 {
     background-color: $primary-color-body;
@@ -183,7 +281,6 @@ html, body {
     border: $border-card1;
     border-radius: $border-radius-card1;
     border-color: $border-color-card1;
-    
     
      //imagem
     .image{
@@ -207,37 +304,12 @@ html, body {
         }
         p {
             font-size: 12px;
-            margin: 0px 0px 50px 0px ;
+            margin: 0px 0px 5px 0px ;
         }
     }
 
 
-    //Botão estilo1 
-    .xinfo-button1 {
-        position: relative;
-        bottom: 20px;
-        left: 20px;
-        max-width: 86px;
-        background: $background-color-button1;
-        color: $text-color-button1;
-        font-size: $font-size-base;
-        padding: $spacing-unit;
-        border: $border-button1;
-        border-color: $border-color-button1;
-        border-radius: $border-radius-button1;
-        font-family: Helvetica;
-        font-size: 14px;
-        padding: 5px 10px;
-        letter-spacing: 1px;
-        font-weight: bold;
-        transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
     
-        &:hover {
-            background-color: $backgroundHover-color-button1 ;
-            color: $textHover-color-button1 !important;
-            cursor: pointer;
-        }
-    }
 }
 
 
@@ -276,14 +348,152 @@ html, body {
     }
 
 
-    //Botão estilo2
-.xinfo-button2 {
-    position: relative;
+    
+}
+
+
+//Botão 1 estilo 1 
+.xinfo-button1-v1-roxo {
+    max-width: 120px;
+    background: $background-color-button1;
+    color: $text-color-button1;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1;
+    border-color: $border-color-button1;
+    border-radius: $border-radius-button1;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1 ;
+        color: $textHover-color-button1 !important;
+        cursor: pointer;
+    }
+
+}
+
+
+//botão 1 estilo 2
+.xinfo-button1-v2-laranja {
+    max-width: 120px;
+    background: $background-color-button1v2;
+    color: $text-color-button1v2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v2;
+    border-color: $border-color-button1v2;
+    border-radius: $border-radius-button1v2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v2;
+        color: $textHover-color-button1v2 !important;
+        cursor: pointer;
+    }
+
+}
+
+
+//botão 1 estilo 3
+.xinfo-button1-v3-verde {
+    max-width: 120px;
+    background: $background-color-button1v3;
+    color: $text-color-button1v3;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v3;
+    border-color: $border-color-button1v3;
+    border-radius: $border-radius-button1v3;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v3;
+        color: $textHover-color-button1v3 !important;
+        cursor: pointer;
+    }
+}
+
+//botão 1 estilo 4
+.xinfo-button1-v4-branco {
+    max-width: 120px;
+    background: $background-color-button1v4;
+    color: $text-color-button1v4;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v4;
+    border-color: $border-color-button1v4;
+    border-radius: $border-radius-button1v4;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v4;
+        color: $textHover-color-button1v4 !important;
+        cursor: pointer;
+    }
+}
+//botão 1 estilo 5
+.xinfo-button1-v5-preto {
+    max-width: 120px;
+    background: $background-color-button1v5;
+    color: $text-color-button1v5;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v5;
+    border-color: $border-color-button1v5;
+    border-radius: $border-radius-button1v5;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v5;
+        color: $textHover-color-button1v5 !important;
+        cursor: pointer;
+    }
+}
+
+
+
+//botão 2 estilo 1
+.xinfo-button2-v1-roxo {
     max-width: 300px;
     background: $background-color-button2;
     font-size: $font-size-base;
     padding: $spacing-unit;
-    border: $border-button1;
+    border: $border-button2;
     border-radius: $border-radius-button2;
     font-family: Helvetica;
     font-size: 14px;
@@ -291,7 +501,9 @@ html, body {
     letter-spacing: 1px;
     font-weight: bold;
     text-align: center;
-    transition: background-color 0.15s ease-in-out 0.1s, color 0.1s ease-in-out 0.1s;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
 
     &:hover {
         color: $textHover-color-button2 !important;
@@ -299,8 +511,354 @@ html, body {
         cursor: pointer;
     }
 
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+
 }
+//botão 2 estilo 2
+.xinfo-button2-v2-laranja {
+    max-width: 300px;
+    background: $background-color-button2v2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v2;
+    border-radius: $border-radius-button2v2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v2 !important;
+        border-color: $border-color-button2v2;
+        cursor: pointer;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 3
+.xinfo-button2-v3-verde {
+    max-width: 300px;
+    background: $background-color-button2v3;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v3;
+    border-radius: $border-radius-button2v3;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v3 !important;
+        border-color: $border-color-button2v3;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 4
+.xinfo-button2-v4-branco {
+    max-width: 300px;
+    background: $background-color-button2v4;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v4;
+    border-radius: $border-radius-button2v4;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v4 !important;
+        background-color: $backgroundHover-color-button2v4;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 5 
+.xinfo-button2-v5-preto {
+    max-width: 300px;
+    background: $background-color-button2v5;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v5;
+    border-radius: $border-radius-button2v5;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v5 !important;
+        background-color: $backgroundHover-color-button2v5;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
 }
 
 
 
+//botão 2 estilo 1 = bg cinza
+.xinfo-button2-v1-roxo-bgGray {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.445);
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: black;
+    border-radius: $border-radius-button2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2 !important;
+        border-color: $border-color-button2;
+        cursor: pointer;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+
+}
+//botão 2 estilo 2 = bg cinza
+.xinfo-button2-v2-laranja-bgGray {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.445);
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: black;
+    border-radius: $border-radius-button2v2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v2 !important;
+        border-color: $border-color-button2v2;
+        cursor: pointer;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 3 = bg cinza
+.xinfo-button2-v3-verde-bgGray {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.445);
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: black;
+    border-radius: $border-radius-button2v3;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v3 !important;
+        border-color: $border-color-button2v3;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 4 = bg cinza
+.xinfo-button2-v4-branco-bgGray {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.445);
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: black;
+    border-radius: $border-radius-button2v4;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v4 !important;
+        background-color: $backgroundHover-color-button2v4;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 5 = bg cinza
+.xinfo-button2-v5-preto-bgGray {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.445);
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: black;
+    border-radius: $border-radius-button2v5;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.2s, color 0.2s ease-in-out 0.2s;
+    color: $text-color-button2v5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v5 !important;
+        background-color: $backgroundHover-color-button2v5;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
