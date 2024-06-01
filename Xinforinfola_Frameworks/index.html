@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,51 +9,57 @@
 <body>  
 
 
-<!-- Cabeçalho -->
+<!-- Cabeçalho / Header -->
 <header class="xinfo-site-header">
+    <!-- Wrapper principal do cabeçalho -->
     <div class="xinfo-wrapper xinfo-site-header__wrapper">
+      <!-- Navegação principal -->
       <nav class="xinfo-nav">
+        <!-- Botão de toggle para menu responsivo -->
         <button class="xinfo-nav__toggle" aria-expanded="false" type="button">
           menu
         </button>
+        <!-- Lista de navegação -->
         <ul class="xinfo-nav__wrapper">
+          <!-- Item de navegação: Home -->
           <li class="xinfo-nav__item"><a href="#">Home</a></li>
+          <!-- Item de navegação: Digite algo -->
           <li class="xinfo-nav__item"><a href="#">Digite algo</a></li>
+          <!-- Item de navegação: Digite algo -->
           <li class="xinfo-nav__item"><a href="#">Digite algo</a></li>
+          <!-- Item de navegação: Digite algo -->
           <li class="xinfo-nav__item"><a href="#">Digite algo</a></li>
+          <!-- Item de navegação: Digite algo -->
           <li class="xinfo-nav__item"><a href="#">Digite algo</a></li>
         </ul>
       </nav>
-     
-
-      <div class="xinfo-center">   
+  
+      <!-- Centro do cabeçalho contendo o logo e o nome do site -->
+      <div class="xinfo-center">
+        <!-- Logo do site -->
         <img src="/images/test.avif" alt="">
+        <!-- Nome do site -->
         <a href="#" class="xinfo-brand">Nome do site</a>
-    </div>
+      </div>
+      
+      <!-- Botão de sign-in -->
       <a href="#" class="xinfo-button xinfo-button--icon" aria-label="Sign in">
-        <svg
-          version="1.1"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <!-- Ícone SVG para o botão de sign-in -->
+        <svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g>
-            <path
-              d="m83.898 77.398c-2.3984-13-13.699-22.5-26.898-22.5h-13.699c-13.5 0-24.898 9.8008-27.102 23.102-1.1016 6.6992 4.1016 12.699 10.801 12.699h46.199c6.8008 0 12-6.1992 10.801-12.898z"
-            />
-            <path
-              d="m36.102 44.199c7.8008 7.8008 20.398 8 28.398 0.39844l0.19922-0.19922c6.8984-6.6016 7.6016-17.301 1.5-24.699-8.3008-10-23.699-9.8008-31.699 0.39844-5.6016 7.1992-5 17.5 1.5 24z"
-            />
+            <path d="m83.898 77.398c-2.3984-13-13.699-22.5-26.898-22.5h-13.699c-13.5 0-24.898 9.8008-27.102 23.102-1.1016 6.6992 4.1016 12.699 10.801 12.699h46.199c6.8008 0 12-6.1992 10.801-12.898z" />
+            <path d="m36.102 44.199c7.8008 7.8008 20.398 8 28.398 0.39844l0.19922-0.19922c6.8984-6.6016 7.6016-17.301 1.5-24.699-8.3008-10-23.699-9.8008-31.699 0.39844-5.6016 7.1992-5 17.5 1.5 24z" />
           </g>
         </svg>
-
+        <!-- Texto do botão de sign-in -->
         <span>Sign in</span>
       </a>
     </div>
   </header>
 
-
+<h1>Botões em 3 estilos</h1>
     <!-- botões -->
-
+<h2>botões estilo 1</h2>
          <!-- botões estilo 1 -->
 <br>
     <button class="xinfo-button1-v1-roxo">Digite algo</button>
@@ -62,7 +68,7 @@
     <button class="xinfo-button1-v4-branco">Digite algo</button>
     <button class="xinfo-button1-v5-preto">Digite algo</button>
  <br>
-
+ <h2>botões estilo 2</h2>
   <!-- botões estilo 2-->
 
     <button class="xinfo-button2-v1-roxo">Digite algo</button>
@@ -71,7 +77,7 @@
     <button class="xinfo-button2-v4-branco">Digite algo</button>
     <button class="xinfo-button2-v5-preto">Digite algo</button>
     <br>
-
+    <h2>botões + background cinza</h2>
      <!-- botões + background cinza-->
 
     <button class="xinfo-button2-v1-roxo-bgGray">Digite algo</button>
@@ -83,130 +89,187 @@
     <br><br><br><br><br>
 
 
+<h1>cards em 2 estilos</h1>
+<!--Cards exemplos-->
+ <div>
+    <h1>cards1</h1>
+   <!--Card 1 exemplo-->
+    <div class="xinfo-card1">
+    
+        <img class="image" src="/images/test.avif" alt="test">
+        <!-- classe content texts  -->
+        <div class="xinfo-content"> 
+        <h2 >  Digite algo </h2>
+        <p>Digite algo.</p>
+        <!-- classe do botão desejado -->
+        <button class="xinfo-button1-v2-laranja">Digite algo</button>
+    </div>
+    </div> 
+    <h1>cards2</h1>
+<!--Card 2 exemplo-->
+    <div class="xinfo-card2">
+    
+        <img class="image" src="/images/test.avif" alt="test">
+        <!-- classe content texts  -->
+        <div class="xinfo-content2"> 
+        <h2 >  Digite algo </h2>
+        <p>Digite algo.</p>
+        <!-- classe do botão desejado -->
+        <button class="xinfo-button2-v1-roxo">Digite algo</button>
+    </div>
+    </div> 
 
- <!-- cards -->
+ </div>
+ <br><br><br>
 
-    <section>
-         <!-- classe do container todo -->
-        <div class="xinfo-container1"> 
-             <!-- classe do texto h1 -->
-            <div class="xinfo-text-container1">
-            <h1 >Digite algo.</h1>
-        </div>  
-        <!-- classe dos cards em formato colunas e linhas -->
+
+
+ <h1>container1</h1>
+<!-- Container Principal -->
+<section>
+    <!-- Classe do container todo -->
+    <div class="xinfo-container1">
+        <!-- Classe do texto h1 -->
+        <div class="xinfo-text-container1">
+            <h1>Digite algo.</h1>
+        </div>
+        
+        <!-- Classe dos cards em formato colunas e linhas -->
         <div class="xinfo-cardsAll">
-            <!-- classe do card desejado-->
-          <div class="xinfo-card1">
-    
-                <img class="image" src="/images/test.avif" alt="test">
-
-                <!-- classe content texts  -->
-                <div class="xinfo-content"> 
-                <h2 >  Digite algo.  </h2>
-                <p>Digite algo.</p>
-                <!-- classe do botão desejado -->
-                <button class="xinfo-button1-v1-roxo">Digite algo</button>
-            </div>
-                
-                
-            </div> 
-   
-            <!-- classe do card desejado -->
+            <!-- Classe do card desejado -->
             <div class="xinfo-card1">
-    
                 <img class="image" src="/images/test.avif" alt="test">
-                <!-- classe content texts  -->
-                <div class="xinfo-content"> 
-                <h2 >  Digite algo </h2>
-                <p>Digite algo.</p>
-                <!-- classe do botão desejado -->
-                <button class="xinfo-button1-v2-laranja">Digite algo</button>
+                <!-- Classe content texts -->
+                <div class="xinfo-content">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                    <!-- Classe do botão desejado -->
+                    <button class="xinfo-button1-v1-roxo">Digite algo</button>
+                </div>
             </div>
-                
-                
-            </div> 
-            <div class="xinfo-card1">
-    
-                <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content"> 
-                <h2 >  Digite algo. </h2>
-                <p>Digite algo.</p>
-                <button class="xinfo-button1-v3-verde">Digite algo.</button>
-            </div>
-                
-                
-            </div> 
 
-            
+            <!-- Classe do card desejado -->
+            <div class="xinfo-card1">
+                <img class="image" src="/images/test.avif" alt="test">
+                <!-- Classe content texts -->
+                <div class="xinfo-content">
+                    <h2>Digite algo</h2>
+                    <p>Digite algo.</p>
+                    <!-- Classe do botão desejado -->
+                    <button class="xinfo-button1-v2-laranja">Digite algo</button>
+                </div>
+            </div>
+
+            <!-- Classe do card desejado -->
+            <div class="xinfo-card1">
+                <img class="image" src="/images/test.avif" alt="test">
+                <!-- Classe content texts -->
+                <div class="xinfo-content">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                    <!-- Classe do botão desejado -->
+                    <button class="xinfo-button1-v3-verde">Digite algo.</button>
+                </div>
+            </div>
+
+            <!-- Se repete, pode colocar quantos cards quiser -->
             <div class="xinfo-card2">
                 <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content2"> 
-                <h2 >  Digite algo. </h2>
-                <p>Digite algo.</p>
-            </div>
+                <div class="xinfo-content2">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                </div>
                 <button class="xinfo-button2-v1-roxo">Digite algo.</button>
             </div>
-    
+
             <div class="xinfo-card2">
                 <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content2"> 
-                <h2 >  Digite algo.  </h2>
-                <p>Digite algo.</p>
-            </div>
+                <div class="xinfo-content2">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                </div>
                 <button class="xinfo-button2-v2-laranja">Digite algo.</button>
             </div>
 
             <div class="xinfo-card2">
                 <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content2"> 
-                <h2 >  Digite algo.  </h2>
-                <p>Digite algo.</p>
-            </div>
+                <div class="xinfo-content2">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                </div>
                 <button class="xinfo-button2-v3-verde">Digite algo.</button>
             </div>
-
         </div>
+
+        <!-- Classe do texto h1 repetido no final -->
         <div class="xinfo-text-container1">
             <p>Digite algo.</p>
-        </div>  
-        </div> 
-    
-    </section>
+        </div>
+    </div>
+</section>
 
 
-    <section>
-        <div class="xinfo-h2-text2"><h2><span>01.</span>Digite algo.</h2></div>
-        
-        <div class="xinfo-container2">
+
+    <h1>container2</h1>
+    <!--segundo container -->
+<section>
+    <!-- Título da seção com um subtítulo numerado -->
+    <div class="xinfo-h2-text2">
+        <h2><span>01.</span>Digite algo.</h2>
+    </div>
+
+    <!-- Contêiner principal da seção -->
+    <div class="xinfo-container2">
+        <!-- Texto e botão alinhados -->
         <div class="xinfo-btn-text2">
+            <!-- Parágrafo com texto -->
             <p>Digite algo.</p>
+            <!-- Botão a sua ecolha -->
             <button class="xinfo-button1-v1-roxo">Digite algo.</button>
         </div>
+
+        <!-- Imagem de exemplo -->
         <img class="image" src="/images/test2.avif" alt="test">
-        <div class="xinfo-h3-text2"><h3><span>02. </span>Digite algo.</h3></div>
+
+        <!-- Subtítulo numerado -->
+        <div class="xinfo-h3-text2">
+            <h3><span>02. </span>Digite algo.</h3>
+        </div>
+
+        <!-- Conteúdo principal da seção -->
         <div class="xinfo-content-2">
+            <!-- Primeiro cartão de conteúdo -->
             <div class="xinfo-card2">
+                <!-- Imagem do cartão -->
                 <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content2"> 
-                <h2 >  Digite algo.  </h2>
-                <p>Digite algo.</p>
-            </div>
+                <!-- Texto e título dentro do cartão -->
+                <div class="xinfo-content2">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                </div>
+                <!-- Botão verde do cartão -->
                 <button class="xinfo-button2-v3-verde">Digite algo.</button>
             </div>
+
+            <!-- Segundo cartão de conteúdo -->
             <div class="xinfo-card2">
+                <!-- Imagem do cartão -->
                 <img class="image" src="/images/test.avif" alt="test">
-                <div class="xinfo-content2"> 
-                <h2 >  Digite algo.  </h2>
-                <p>Digite algo.</p>
-            </div>
+                <!-- Texto e título dentro do cartão -->
+                <div class="xinfo-content2">
+                    <h2>Digite algo.</h2>
+                    <p>Digite algo.</p>
+                </div>
+                <!-- Botão verde do cartão -->
                 <button class="xinfo-button2-v3-verde">Digite algo.</button>
             </div>
         </div>
     </div>
-    </section>
+</section>
+    <br><br><br>
 
     
-
+<!-- codigo para o menu do header-->
     <script>
         let navToggle = document.querySelector(".xinfo-nav__toggle");
         let navWrapper = document.querySelector(".xinfo-nav__wrapper");
