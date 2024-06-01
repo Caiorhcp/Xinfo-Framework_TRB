@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilo do container 2
+.xinfo-container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: $cor-fundo-container2;
+    width: 100%;
+    height: auto;
+    border-radius: 2.5%;
+    align-items: center;
+    justify-content: center;
+    color: $cor-texto-claro;
+
+    img {
+        width: 100%;
+        max-height: 620px;
+        border-radius: 0% 0% 3% 3%;
+    }
+}
+//texto do botão
+.xinfo-btn-text2 {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: aliceblue;
+}
+
+.xinfo-h2-text2 {
+    h2 {
+        margin-top: 100px;
+        position: relative;
+        bottom: 20px;
+        left: 40px;
+        color: $cor-texto-escuro;
+    }
+
+    span {
+        color: $cor-texto-vermelho;
+    }
+}
+//conteudo do card em linha
+.xinfo-content-2 {
+    display: flex;
+    flex-direction: row;
+}
+//texto do container
+.xinfo-h3-text2 {
+    width: 100%;
+    
+    h3 {
+        margin-top: 50px;
+        position: relative;
+        bottom: 10px;
+        left: 50px;
+        color: $cor-texto-branco;
+    }
+
+    span {
+        color: $cor-texto-vermelho;
+    }
+}
+
+// Estilo dos cartões dentro do container 2
+.xinfo-card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 460px;
+    margin: 20px;
+
+    .image {
+        border-radius: $raio-borda-imagem2;
+        max-width: 100%;
+        height: 300px;
+    }
+//conteudo do container
+    .xinfo-content2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        h2 {
+            letter-spacing: 2px;
+            font-family: Helvetica;
+            font-style: italic;
+            margin: 10px 0 20px 0;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 0 0 20px 0;
+        }
+    }
+}

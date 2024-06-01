@@ -1,0 +1,98 @@
+@import 'variables';
+@import 'mixins';
+
+//Header, cabeçalho
+.xinfo-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+//imagem e texto, meio do header
+.xinfo-site-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #000000c7;
+    align-items: center;
+    justify-content: center;
+}
+
+//parte do todo do header
+.xinfo-site-header__wrapper {
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+//funcção de centralizar do header
+.xinfo-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+//imagem
+ header img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+//enu
+.xinfo-nav__wrapper {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    max-height: auto;
+    width: Max(220px, 20%);
+    bottom: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+    background-color: rgba(36, 36, 36, 0.849);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    display: block;
+}
+//botão de menu a
+.xinfo-nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+//estilo da navegação do menu, itens
+.xinfo-nav__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}//estilo da navegação do menu item de link
+.xinfo-nav__item a {
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+}
+//estilo da navegação do menu
+.xinfo-nav__toggle {
+    max-width: 300px;
+    background: rgba(128, 128, 128, 0.664);
+    color: $text-color-button1;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1;
+    border-radius: $border-radius-button1;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: white ;
+        color:black  !important;
+        cursor: pointer;
+    }
+}

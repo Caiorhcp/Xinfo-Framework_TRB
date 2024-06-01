@@ -158,3 +158,49 @@ $cor-texto-escuro: rgba(0, 0, 0, 0.75);
 $cor-texto-vermelho: rgba(255, 0, 0, 0.75);
 $cor-texto-branco: rgba(255, 255, 255, 0.75);
 $secondary-color-body: #333;
+
+
+// Variáveis Globais default
+$default-flex-direction: row;
+$default-flex-justify: flex-start;
+$default-flex-align: stretch;
+
+$default-grid-columns: 2;
+$default-grid-rows: auto;
+$default-grid-gap: 10px;
+
+$default-font-family: 'Arial';
+$default-font-size: 16px;
+$default-font-weight: normal;
+$default-line-height: 1.5;
+
+$default-background-color: #fff;
+$default-color: #000;
+$default-border-color: #000;
+$default-border-width: 1px;
+$default-border-style: solid;
+
+$default-margin: 0;
+$default-padding: 0;
+
+// Custom Variables
+//$default-flex-direction: column;
+//$default-flex-justify: center;
+//$default-flex-align: center;
+
+//$default-grid-columns: 3;
+//$default-grid-gap: 20px;
+
+//$default-font-family: 'Helvetica';
+//$default-font-size: 18px;
+//$default-font-weight: bold;
+//$default-line-height: 1.8;
+
+//$default-background-color: #f8f9fa;
+//$default-color: #333;
+//$default-border-color: #ddd;
+//$default-border-width: 2px;
+//$default-border-style: dashed;
+
+//$default-margin: 10px;
+//$default-padding: 15px;

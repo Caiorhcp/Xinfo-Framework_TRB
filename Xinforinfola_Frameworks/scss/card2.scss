@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilo do cartão 2
+.xinfo-card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 460px;
+    margin: 20px;
+
+    .image {
+        border-radius: $raio-borda-imagem2;
+        max-width: 100%;
+        height: 300px;
+    }
+    //conteudo centralizado como collumn
+    .xinfo-content2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        h2 {
+            letter-spacing: 2px;
+            font-family: Helvetica;
+            font-style: italic;
+            margin: 10px 0 20px 0;
+        }
+
+        p {
+            font-size: 12px;
+            margin: 0 0 20px 0;
+        }
+    }
+}

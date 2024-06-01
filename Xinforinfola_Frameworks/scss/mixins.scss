@@ -1,0 +1,91 @@
+@import 'variables';
+
+
+// xinfo-framework.scss
+
+// Flexbox Mixins
+@mixin xinfo-flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin xinfo-flexbox($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin xinfo-flex-space-between($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  // Grid Mixins
+  @mixin xinfo-grid-layout($columns: 2, $rows: auto, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: $rows;
+    gap: $gap;
+  }
+  
+  @mixin xinfo-grid-custom($columns: repeat(auto-fill, minmax(100px, 1fr)), $rows: auto, $gap: 10px) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+  }
+  
+  @mixin xinfo-grid-center($columns: 2, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  // Typography Mixins
+  @mixin xinfo-font($family: 'Arial', $size: 16px, $weight: normal, $line-height: 1.5) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+  }
+  
+  @mixin xinfo-text-center {
+    text-align: center;
+  }
+  
+  @mixin xinfo-text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  // Color Mixins
+  @mixin xinfo-background($color) {
+    background-color: $color;
+  }
+  
+  @mixin xinfo-color($color) {
+    color: $color;
+  }
+  
+  @mixin xinfo-border($color, $width: 1px, $style: solid) {
+    border: $width $style $color;
+  }
+  
+  // Spacing Mixins
+  @mixin xinfo-margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    margin: $top $right $bottom $left;
+  }
+  
+  @mixin xinfo-padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    padding: $top $right $bottom $left;
+  }
+  
+  @mixin xinfo-spacing($property, $value) {
+    #{$property}: $value;
+  }

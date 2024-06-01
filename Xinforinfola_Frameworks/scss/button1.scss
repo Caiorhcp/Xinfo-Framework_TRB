@@ -1,0 +1,135 @@
+@import 'variables';
+@import 'mixins';
+
+//Botão 1 estilo 1 
+.xinfo-button1-v1-roxo {
+    max-width: 300px;
+    background: $background-color-button1;
+    color: $text-color-button1;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1;
+    border-color: $border-color-button1;
+    border-radius: $border-radius-button1;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1 ;
+        color: $textHover-color-button1 !important;
+        cursor: pointer;
+    }
+
+}
+
+
+//botão 1 estilo 2
+.xinfo-button1-v2-laranja {
+    max-width: 300px;
+    background: $background-color-button1v2;
+    color: $text-color-button1v2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v2;
+    border-color: $border-color-button1v2;
+    border-radius: $border-radius-button1v2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v2;
+        color: $textHover-color-button1v2 !important;
+        cursor: pointer;
+    }
+
+}
+
+
+//botão 1 estilo 3
+.xinfo-button1-v3-verde {
+    max-width: 300px;
+    background: $background-color-button1v3;
+    color: $text-color-button1v3;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v3;
+    border-color: $border-color-button1v3;
+    border-radius: $border-radius-button1v3;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v3;
+        color: $textHover-color-button1v3 !important;
+        cursor: pointer;
+    }
+}
+
+//botão 1 estilo 4
+.xinfo-button1-v4-branco {
+    max-width: 300px;
+    background: $background-color-button1v4;
+    color: $text-color-button1v4;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v4;
+    border-color: $border-color-button1v4;
+    border-radius: $border-radius-button1v4;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v4;
+        color: $textHover-color-button1v4 !important;
+        cursor: pointer;
+    }
+}
+//botão 1 estilo 5
+.xinfo-button1-v5-preto {
+    max-width: 300px;
+    background: $background-color-button1v5;
+    color: $text-color-button1v5;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button1v5;
+    border-color: $border-color-button1v5;
+    border-radius: $border-radius-button1v5;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        background-color: $backgroundHover-color-button1v5;
+        color: $textHover-color-button1v5 !important;
+        cursor: pointer;
+    }
+}

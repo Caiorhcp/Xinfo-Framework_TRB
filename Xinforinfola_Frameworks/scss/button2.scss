@@ -1,0 +1,189 @@
+@import 'variables';
+@import 'mixins';
+
+//botão 2 estilo 1
+.xinfo-button2-v1-roxo {
+    max-width: 300px;
+    background: $background-color-button2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2;
+    border-radius: $border-radius-button2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2 !important;
+        border-color: $border-color-button2;
+        cursor: pointer;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+
+}
+//botão 2 estilo 2
+.xinfo-button2-v2-laranja {
+    max-width: 300px;
+    background: $background-color-button2v2;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v2;
+    border-radius: $border-radius-button2v2;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    color: $text-color-button2v2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v2 !important;
+        border-color: $border-color-button2v2;
+        cursor: pointer;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 3
+.xinfo-button2-v3-verde {
+    max-width: 300px;
+    background: $background-color-button2v3;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v3;
+    border-radius: $border-radius-button2v3;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    color: $text-color-button2v3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v3 !important;
+        border-color: $border-color-button2v3;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 4
+.xinfo-button2-v4-branco {
+    max-width: 300px;
+    background: $background-color-button2v4;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v4;
+    border-radius: $border-radius-button2v4;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    color: $text-color-button2v4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v4 !important;
+        background-color: $backgroundHover-color-button2v4;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}
+
+//botão 2 estilo 5 
+.xinfo-button2-v5-preto {
+    max-width: 300px;
+    background: $background-color-button2v5;
+    font-size: $font-size-base;
+    padding: $spacing-unit;
+    border: $border-button2v5;
+    border-radius: $border-radius-button2v5;
+    font-family: Helvetica;
+    font-size: 14px;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out 0.0s, color 0.5s ease-in-out 0.0s;
+    color: $text-color-button2v5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+
+    &:hover {
+        color: $textHover-color-button2v5 !important;
+        background-color: $backgroundHover-color-button2v5;
+        cursor: pointer;
+    }
+
+
+    h2 {
+        letter-spacing: 2px;
+        font-family:Helvetica;
+        font-style: italic;
+        margin:10px 0px 20px 0px ;
+    }
+    p {
+        font-size: 12px;
+        margin: 0px 0px 20px 0px ;
+    }
+}

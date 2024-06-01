@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilo do contêiner principal
+.xinfo-container1 {
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 4%;
+    gap: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px 0;
+    padding-bottom: 40px;
+
+    h1 {
+        font-size: 60px;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        color: $cor-alternativa2;
+        letter-spacing: 10px;
+        margin-top: 30px;
+        color: aliceblue;
+    }
+}
+//estilo  do texto do container
+.xinfo-text-container1 {
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+
+// Estilo do contêiner de cartões
+.xinfo-cardsAll {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 20px; 
+    padding: 20px; 
+}

@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilos responsivos
+@media (max-width: 767px) {
+    .xinfo-cardsAll {
+        grid-template-columns: 1fr; // Layout de coluna única em telas menores
+        padding: 10px;
+    }
+
+    .xinfo-card1, .xinfo-card2 {
+        max-width: 100%; // Largura total em telas menores
+        margin: 10px 0;
+    }
+
+    .xinfo-container1 h1 {
+        font-size: 48px; // Tamanho da fonte menor para o cabeçalho em telas menores
+        letter-spacing: 5px;
+    }
+}
+
+//parte da responsividade do container 1 e dos cards dentro dele
+@media (max-width: 479px) {
+    .xinfo-container1 {
+        padding: 0 10px;
+        border-radius: 3%;
+        width: 100%;
+    }
+
+    .xinfo-text-container1 h1{
+        width: 100%;
+        color: aliceblue;
+        display: flex;
+        text-align: center;
+    }
+
+    .xinfo-container1 h1 {
+        font-size: 36px; // Tamanho da fonte ainda menor para o cabeçalho em telas extra pequenas
+        letter-spacing: 3px;
+    }
+
+    .xinfo-card1 .xinfo-content, .xinfo-card2 .xinfo-content2 {
+        padding: 10px;
+    }
+
+    .xinfo-card1 .xinfo-content h2, .xinfo-card2 .xinfo-content2 h2 {
+        font-size: 18px; // Tamanho da fonte menor para os títulos dos cartões em telas extra pequenas
+    }
+
+    .xinfo-card1 .xinfo-content p, .xinfo-card2 .xinfo-content2 p {
+        font-size: 10px; // Tamanho da fonte menor para os textos dos cartões em telas extra pequenas
+    }
+}
+
+
+
+
+
+
+// Estilos responsivos do container 2
+@media (max-width: 768px) {
+    .xinfo-container2 {
+        padding: 10px;
+    }
+
+    .xinfo-h2-text2 h2 {
+        font-size: 36px; // Tamanho da fonte menor para o cabeçalho em telas menores
+        left: 20px;
+    }
+
+    .xinfo-h3-text2 h3 {
+        font-size: 24px; // Tamanho da fonte menor para o subtítulo em telas menores
+        left: 20px;
+    }
+
+    .xinfo-content-2 {
+        flex-direction: column; // Colocar os cartões em coluna em telas menores
+        align-items: center;
+    }
+
+    .xinfo-card2 {
+        max-width: 100%; // Largura total dos cartões em telas menores
+        margin: 10px 0;
+    }
+
+    .xinfo-btn-text2 {
+        flex-direction: column; // Mudar para coluna para melhor ajuste em telas menores
+        height: auto;
+    }
+
+    .xinfo-btn-text2 p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .xinfo-h2-text2 h2 {
+        font-size: 28px; // Tamanho da fonte ainda menor para o cabeçalho em telas extra pequenas
+    }
+
+    .xinfo-h3-text2 h3 {
+        font-size: 20px; // Tamanho da fonte menor para o subtítulo em telas extra pequenas
+    }
+
+    .xinfo-btn-text2 {
+        gap: 5px; // Menor espaçamento entre os elementos do botão em telas extra pequenas
+    }
+}
