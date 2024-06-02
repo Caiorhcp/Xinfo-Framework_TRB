@@ -21,6 +21,7 @@
 .xinfo-site-header__wrapper {
     top: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
@@ -33,7 +34,6 @@
     align-items: center;
     gap: 10px;
     text-align: center;
-    margin-bottom: 50px;
 }
 //imagem
  header img {
@@ -41,7 +41,7 @@
     width: 80px;
     border-radius: 100%;
 }
-//enu
+//menu
 .xinfo-nav__wrapper {
     position: fixed;
     top: 72px;
@@ -75,12 +75,9 @@
 //estilo da navegação do menu
 .xinfo-nav__toggle {
     max-width: 300px;
-    background: rgba(128, 128, 128, 0.664);
+    background: rgba(0, 0, 0, 0.11);
     color: $text-color-button1;
     font-size: $font-size-base;
-    padding: $spacing-unit;
-    border: $border-button1;
-    border-radius: $border-radius-button1;
     font-family: Helvetica;
     font-size: 14px;
     padding: 5px 10px;
@@ -95,4 +92,5 @@
         color:black  !important;
         cursor: pointer;
     }
+
 }

@@ -17,6 +17,7 @@
 .xinfo-site-header__wrapper {
   top: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
@@ -29,7 +30,6 @@
   align-items: center;
   gap: 10px;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 header img {
@@ -72,12 +72,9 @@ header img {
 
 .xinfo-nav__toggle {
   max-width: 300px;
-  background: rgba(128, 128, 128, 0.664);
+  background: rgba(0, 0, 0, 0.11);
   color: #ffffff;
   font-size: 16px;
-  padding: 16px;
-  border: 1px solid;
-  border-radius: 50px;
   font-family: Helvetica;
   font-size: 14px;
   padding: 5px 10px;
